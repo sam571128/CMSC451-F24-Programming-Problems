@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="4" short-name="scc-select-min" url="https://polygon.codeforces.com/p1lCS0j/ldhulipala/scc-select-min">
+    <names>
+        <name language="english" value="Building Improvements"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>41</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual"/>
+                <test cmd="gen-small 1" method="generated"/>
+                <test cmd="gen-small 2" method="generated"/>
+                <test cmd="gen-small 3" method="generated"/>
+                <test cmd="gen-small 4" method="generated"/>
+                <test cmd="gen-sparse 1" method="generated"/>
+                <test cmd="gen-sparse 2" method="generated"/>
+                <test cmd="gen-sparse 3" method="generated"/>
+                <test cmd="gen-sparse 4" method="generated"/>
+                <test cmd="gen-sparse 5" method="generated"/>
+                <test cmd="gen-sparse 6" method="generated"/>
+                <test cmd="gen-sparse 7" method="generated"/>
+                <test cmd="gen-sparse 8" method="generated"/>
+                <test cmd="gen-sparse 9" method="generated"/>
+                <test cmd="gen-sparse 10" method="generated"/>
+                <test cmd="gen-medium 1" method="generated"/>
+                <test cmd="gen-medium 2" method="generated"/>
+                <test cmd="gen-medium 3" method="generated"/>
+                <test cmd="gen-medium 4" method="generated"/>
+                <test cmd="gen-medium 5" method="generated"/>
+                <test cmd="gen-medium 6" method="generated"/>
+                <test cmd="gen-medium 7" method="generated"/>
+                <test cmd="gen-medium 8" method="generated"/>
+                <test cmd="gen-medium 9" method="generated"/>
+                <test cmd="gen-medium 10" method="generated"/>
+                <test cmd="gen-medium 11" method="generated"/>
+                <test cmd="gen-medium 12" method="generated"/>
+                <test cmd="gen-medium 13" method="generated"/>
+                <test cmd="gen-medium 14" method="generated"/>
+                <test cmd="gen-medium 15" method="generated"/>
+                <test cmd="gen-medium 16" method="generated"/>
+                <test cmd="gen-medium 17" method="generated"/>
+                <test cmd="gen-medium 18" method="generated"/>
+                <test cmd="gen-medium 19" method="generated"/>
+                <test cmd="gen-medium 20" method="generated"/>
+                <test cmd="gen-large 1" method="generated"/>
+                <test cmd="gen-large 2" method="generated"/>
+                <test cmd="gen-large 3" method="generated"/>
+                <test cmd="gen-large 4" method="generated"/>
+                <test cmd="gen-large 5" method="generated"/>
+                <test method="manual" sample="true"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/gen-large.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/gen-large.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen-medium.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/gen-medium.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen-small.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/gen-small.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen-sparse.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/gen-sparse.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cc" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::wcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cc" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/mysol.cc" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/mysol.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

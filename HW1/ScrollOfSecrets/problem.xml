@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="5" short-name="scroll-of-secrets" url="https://polygon.codeforces.com/p8DLfnC/slee/scroll-of-secrets">
+    <names>
+        <name language="english" value="Scroll of Secrets"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>536870912</memory-limit>
+            <test-count>81</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test cmd="gen -n=100 1 -rndn" method="generated"/>
+                <test cmd="gen -n=100 2 -rndn" method="generated"/>
+                <test cmd="gen -n=100 3 -rndn" method="generated"/>
+                <test cmd="gen -n=100 4 -rndn" method="generated"/>
+                <test cmd="gen -n=100 5 -rndn" method="generated"/>
+                <test cmd="gen -n=100 6 -rndn" method="generated"/>
+                <test cmd="gen -n=100 7 -rndn" method="generated"/>
+                <test cmd="gen -n=100 8 -rndn" method="generated"/>
+                <test cmd="gen -n=100 9 -rndn" method="generated"/>
+                <test cmd="gen -n=100 10 -rndn" method="generated"/>
+                <test cmd="gen -n=1000 11 -rndn" method="generated"/>
+                <test cmd="gen -n=1000 12 -rndn" method="generated"/>
+                <test cmd="gen -n=1000 13 -rndn" method="generated"/>
+                <test cmd="gen -n=1000 14 -rndn" method="generated"/>
+                <test cmd="gen -n=1000 15 -rndn" method="generated"/>
+                <test cmd="gen -n=1000 16 -rndn" method="generated"/>
+                <test cmd="gen -n=1000 17 -rndn" method="generated"/>
+                <test cmd="gen -n=1000 18 -rndn" method="generated"/>
+                <test cmd="gen -n=1000 19 -rndn" method="generated"/>
+                <test cmd="gen -n=1000 20 -rndn" method="generated"/>
+                <test cmd="gen -n=10000 21 -rndn" method="generated"/>
+                <test cmd="gen -n=10000 22 -rndn" method="generated"/>
+                <test cmd="gen -n=10000 23 -rndn" method="generated"/>
+                <test cmd="gen -n=10000 24 -rndn" method="generated"/>
+                <test cmd="gen -n=10000 25 -rndn" method="generated"/>
+                <test cmd="gen -n=10000 26 -rndn" method="generated"/>
+                <test cmd="gen -n=10000 27 -rndn" method="generated"/>
+                <test cmd="gen -n=10000 28 -rndn" method="generated"/>
+                <test cmd="gen -n=10000 29 -rndn" method="generated"/>
+                <test cmd="gen -n=10000 30 -rndn" method="generated"/>
+                <test cmd="gen -n=100000 31 -rndn" method="generated"/>
+                <test cmd="gen -n=100000 32 -rndn" method="generated"/>
+                <test cmd="gen -n=100000 33 -rndn" method="generated"/>
+                <test cmd="gen -n=100000 34 -rndn" method="generated"/>
+                <test cmd="gen -n=100000 35 -rndn" method="generated"/>
+                <test cmd="gen -n=100000 36 -rndn" method="generated"/>
+                <test cmd="gen -n=100000 37 -rndn" method="generated"/>
+                <test cmd="gen -n=100000 38 -rndn" method="generated"/>
+                <test cmd="gen -n=100000 39 -rndn" method="generated"/>
+                <test cmd="gen -n=100000 40 -rndn" method="generated"/>
+                <test cmd="gen -n=100000 41" method="generated"/>
+                <test cmd="gen -n=100000 42" method="generated"/>
+                <test cmd="gen -n=100000 43" method="generated"/>
+                <test cmd="gen -n=100000 44" method="generated"/>
+                <test cmd="gen -n=100000 45" method="generated"/>
+                <test cmd="gen -n=100000 46" method="generated"/>
+                <test cmd="gen -n=100000 47" method="generated"/>
+                <test cmd="gen -n=100000 48" method="generated"/>
+                <test cmd="gen -n=100000 49" method="generated"/>
+                <test cmd="gen -n=100000 50" method="generated"/>
+                <test cmd="gen -n=100000 51" method="generated"/>
+                <test cmd="gen -n=100000 52" method="generated"/>
+                <test cmd="gen -n=100000 53" method="generated"/>
+                <test cmd="gen -n=100000 54" method="generated"/>
+                <test cmd="gen -n=100000 55" method="generated"/>
+                <test cmd="gen -n=100000 56" method="generated"/>
+                <test cmd="gen -n=100000 57" method="generated"/>
+                <test cmd="gen -n=100000 58" method="generated"/>
+                <test cmd="gen -n=100000 59" method="generated"/>
+                <test cmd="gen -n=100000 60" method="generated"/>
+                <test cmd="gen -n=100000 61" method="generated"/>
+                <test cmd="gen -n=100000 62" method="generated"/>
+                <test cmd="gen -n=100000 63" method="generated"/>
+                <test cmd="gen -n=100000 64" method="generated"/>
+                <test cmd="gen -n=100000 65" method="generated"/>
+                <test cmd="gen -n=100000 66" method="generated"/>
+                <test cmd="gen -n=100000 67" method="generated"/>
+                <test cmd="gen -n=100000 68" method="generated"/>
+                <test cmd="gen -n=100000 69" method="generated"/>
+                <test cmd="gen -n=100000 70" method="generated"/>
+                <test cmd="gen -n=100000 71" method="generated"/>
+                <test cmd="gen -n=100000 72" method="generated"/>
+                <test cmd="gen -n=100000 73" method="generated"/>
+                <test cmd="gen -n=100000 74" method="generated"/>
+                <test cmd="gen -n=100000 75" method="generated"/>
+                <test cmd="gen -n=100000 76" method="generated"/>
+                <test cmd="gen -n=100000 77" method="generated"/>
+                <test cmd="gen -n=100000 78" method="generated"/>
+                <test cmd="gen -n=100000 79" method="generated"/>
+                <test cmd="gen -n=100000 80" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/checker.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+                <binary path="files/checker.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+                <binary path="files/gen.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/interactor.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+                <binary path="files/interactor.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/checker.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <interactor>
+            <source path="files/interactor.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+            <binary path="files/interactor.exe" type="exe.win32"/>
+        </interactor>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/Sam.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+                <binary path="solutions/Sam.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="5" short-name="dac-path-sums" url="https://polygon.codeforces.com/p0w12Mk/rwen/dac-path-sums">
+    <names>
+        <name language="english" value="Path Sums"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>500</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>100</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test description="This is the example tree shown in the problem statement. There are 2 paths that sum to 11: 6-2-3 and 7-4." group="unit" method="manual" sample="true"/>
+                <test description="Ensure that empty paths are not valid." group="unit" method="manual"/>
+                <test description="Ensure that paths are not allowed to wrap around the top or double back." group="unit" method="manual"/>
+                <test description="Ensure that one-node paths are considered valid." group="unit" method="manual"/>
+                <test description="Ensure that zeros and negative values are handled properly." group="unit" method="manual"/>
+                <test cmd="generator -n 10 -minc 0 -maxc 4 -k 5 -b 0.5 1 6" group="small" method="generated"/>
+                <test cmd="generator -n 10 -minc 0 -maxc 4 -k 5 -b 0.5 1 7" group="small" method="generated"/>
+                <test cmd="generator -n 10 -minc 0 -maxc 4 -k 5 -b 0.5 1 8" group="small" method="generated"/>
+                <test cmd="generator -n 10 -minc 0 -maxc 4 -k 5 -b 0.5 1 9" group="small" method="generated"/>
+                <test cmd="generator -n 10 -minc 0 -maxc 4 -k 5 -b 0.5 1 10" group="small" method="generated"/>
+                <test cmd="generator -n 25 -minc 0 -maxc 4 -k 30 -rndk -b 0.5 1 11" group="small" method="generated"/>
+                <test cmd="generator -n 25 -minc 0 -maxc 4 -k 30 -rndk -b 0.5 1 12" group="small" method="generated"/>
+                <test cmd="generator -n 25 -minc 0 -maxc 4 -k 30 -rndk -b 0.5 1 13" group="small" method="generated"/>
+                <test cmd="generator -n 25 -minc 0 -maxc 4 -k 30 -rndk -b 0.5 1 14" group="small" method="generated"/>
+                <test cmd="generator -n 25 -minc 0 -maxc 4 -k 30 -rndk -b 0.5 1 15" group="small" method="generated"/>
+                <test cmd="generator -n 25 -minc 0 -maxc 4 -k 30 -rndk -b 0.5 1 16" group="small" method="generated"/>
+                <test cmd="generator -n 25 -minc 0 -maxc 4 -k 30 -rndk -b 0.5 1 17" group="small" method="generated"/>
+                <test cmd="generator -n 25 -minc 0 -maxc 4 -k 30 -rndk -b 0.5 1 18" group="small" method="generated"/>
+                <test cmd="generator -n 25 -minc 0 -maxc 4 -k 30 -rndk -b 0.5 1 19" group="small" method="generated"/>
+                <test cmd="generator -n 25 -minc 0 -maxc 4 -k 30 -rndk -b 0.5 1 20" group="small" method="generated"/>
+                <test cmd="generator -n 100 -rndn -minc -5 -maxc 20 -k 10 -rndk -b 0.5 1 21" group="small" method="generated"/>
+                <test cmd="generator -n 100 -rndn -minc -5 -maxc 20 -k 10 -rndk -b 0.5 1 22" group="small" method="generated"/>
+                <test cmd="generator -n 100 -rndn -minc -5 -maxc 20 -k 10 -rndk -b 0.5 1 23" group="small" method="generated"/>
+                <test cmd="generator -n 100 -rndn -minc -5 -maxc 20 -k 10 -rndk -b 0.5 1 24" group="small" method="generated"/>
+                <test cmd="generator -n 100 -rndn -minc -5 -maxc 20 -k 10 -rndk -b 0.5 1 25" group="small" method="generated"/>
+                <test cmd="generator -n 100 -rndn -minc -5 -maxc 20 -k 10 -rndk -b 0.5 1 26" group="small" method="generated"/>
+                <test cmd="generator -n 100 -rndn -minc -5 -maxc 20 -k 10 -rndk -b 0.5 1 27" group="small" method="generated"/>
+                <test cmd="generator -n 100 -rndn -minc -5 -maxc 20 -k 10 -rndk -b 0.5 1 28" group="small" method="generated"/>
+                <test cmd="generator -n 100 -rndn -minc -5 -maxc 20 -k 10 -rndk -b 0.5 1 29" group="small" method="generated"/>
+                <test cmd="generator -n 100 -rndn -minc -5 -maxc 20 -k 10 -rndk -b 0.5 1 30" group="small" method="generated"/>
+                <test cmd="generator -n 100 -minc -5 -maxc 5 -k 10 -rndk -b 0.5 1 31" group="small" method="generated"/>
+                <test cmd="generator -n 100 -minc -5 -maxc 5 -k 10 -rndk -b 0.5 1 32" group="small" method="generated"/>
+                <test cmd="generator -n 100 -minc -5 -maxc 5 -k 10 -rndk -b 0.5 1 33" group="small" method="generated"/>
+                <test cmd="generator -n 100 -minc -5 -maxc 5 -k 10 -rndk -b 0.5 1 34" group="small" method="generated"/>
+                <test cmd="generator -n 100 -minc -5 -maxc 5 -k 10 -rndk -b 0.5 1 35" group="small" method="generated"/>
+                <test cmd="generator -n 100 -minc -5 -maxc 5 -k 10 -rndk -b 0.5 1 36" group="small" method="generated"/>
+                <test cmd="generator -n 100 -minc -5 -maxc 5 -k 10 -rndk -b 0.5 1 37" group="small" method="generated"/>
+                <test cmd="generator -n 100 -minc -5 -maxc 5 -k 10 -rndk -b 0.5 1 38" group="small" method="generated"/>
+                <test cmd="generator -n 100 -minc -5 -maxc 5 -k 10 -rndk -b 0.5 1 39" group="small" method="generated"/>
+                <test cmd="generator -n 100 -minc -5 -maxc 5 -k 10 -rndk -b 0.5 1 40" group="small" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 41" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 42" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 43" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 44" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 45" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 46" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 47" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 48" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 49" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 50" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 51" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 52" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 53" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 54" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 55" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 56" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 57" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 58" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 59" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 60" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 61" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 62" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 63" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 64" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 65" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 66" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 67" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 68" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 69" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -10 -maxc 10 -k 40 -rndk -b 0.5 2 70" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -minc -8 -maxc 8 -k 20 -rndk -b 0.5 2 71" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -minc -8 -maxc 8 -k 20 -rndk -b 0.5 2 72" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -minc -8 -maxc 8 -k 20 -rndk -b 0.5 2 73" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -minc -8 -maxc 8 -k 20 -rndk -b 0.5 2 74" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -minc -8 -maxc 8 -k 20 -rndk -b 0.5 2 75" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -minc -8 -maxc 8 -k 20 -rndk -b 0.5 2 76" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -minc -8 -maxc 8 -k 20 -rndk -b 0.5 2 77" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -minc -8 -maxc 8 -k 20 -rndk -b 0.5 2 78" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -minc -8 -maxc 8 -k 20 -rndk -b 0.5 2 79" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -minc -8 -maxc 8 -k 20 -rndk -b 0.5 2 80" group="balanced" method="generated"/>
+                <test cmd="generator -n 1000 -minc -1 -maxc 1 -k 0 -b 0.5 3 81" group="hard" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -5 -maxc 5 -k 10 -rndk -rndb -b 0 3 82" group="hard" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -5 -maxc 5 -k 10 -rndk -rndb -b 0 3 83" group="hard" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -5 -maxc 5 -k 10 -rndk -rndb -b 0 3 84" group="hard" method="generated"/>
+                <test cmd="generator -n 1000 -rndn -minc -5 -maxc 5 -k 10 -rndk -rndb -b 0 3 85" group="hard" method="generated"/>
+                <test cmd="generator -n 1000 -minc -5 -maxc 5 -k 10 -rndk -rndb -b 0 3 86" group="hard" method="generated"/>
+                <test cmd="generator -n 1000 -minc -5 -maxc 5 -k 10 -rndk -rndb -b 0 3 87" group="hard" method="generated"/>
+                <test cmd="generator -n 1000 -minc -5 -maxc 5 -k 10 -rndk -rndb -b 0 3 88" group="hard" method="generated"/>
+                <test cmd="generator -n 1000 -minc -5 -maxc 5 -k 10 -rndk -rndb -b 0 3 89" group="hard" method="generated"/>
+                <test cmd="generator -n 1000 -minc -5 -maxc 5 -k 10 -rndk -rndb -b 0 3 90" group="hard" method="generated"/>
+                <test cmd="generator -n 1000 -minc -1 -maxc 1 -k 0 -b 0.5 3 91" group="hard" method="generated"/>
+                <test cmd="generator -n 1000 -minc -1 -maxc 1 -k 0 -b 0.4 3 92" group="hard" method="generated"/>
+                <test cmd="generator -n 1000 -minc -1 -maxc 1 -k 0 -b 0.7 3 93" group="hard" method="generated"/>
+                <test cmd="generator -n 1000 -minc -1 -maxc 1 -k 0 -b 0.2 3 94" group="hard" method="generated"/>
+                <test cmd="generator -n 1000 -minc -1 -maxc 1 -k 0 -b 0.9 3 95" group="hard" method="generated"/>
+                <test cmd="generator -n 950 -minc -1 -maxc 1 -k 0 -b 0 3 96" group="hard" method="generated"/>
+                <test cmd="generator -n 950 -minc -1 -maxc 1 -k 0 -b 0 3 97" group="hard" method="generated"/>
+                <test cmd="generator -n 950 -minc -1 -maxc 1 -k 0 -b 0 3 98" group="hard" method="generated"/>
+                <test cmd="generator -n 950 -minc -1 -maxc 1 -k 0 -b 0 3 99" group="hard" method="generated"/>
+                <test cmd="generator -n 950 -minc -1 -maxc 1 -k 0 -b 0 3 100" group="hard" method="generated"/>
+            </tests>
+            <groups>
+                <group feedback-policy="points" name="balanced" points-policy="each-test"/>
+                <group feedback-policy="points" name="hard" points-policy="each-test"/>
+                <group feedback-policy="points" name="small" points-policy="each-test"/>
+                <group feedback-policy="points" name="unit" points-policy="each-test"/>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/generator.cpp" type="cpp.g++17"/>
+                <binary path="files/generator.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::hcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>8</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/bfs_soln.cpp" type="cpp.g++17"/>
+                <binary path="solutions/bfs_soln.pys3" type="pythonx.3"/>
+            </solution>
+            <solution note="Generated by AI" tag="accepted">
+                <source path="solutions/bfs_soln.py" type="python.3"/>
+                <binary path="solutions/bfs_soln.pys3" type="pythonx.3"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/multiset_soln.cpp" type="cpp.g++17"/>
+                <binary path="solutions/multiset_soln.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

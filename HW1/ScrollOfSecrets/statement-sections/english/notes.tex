@@ -1,0 +1,15 @@
+For the first example, in a quest where $n = 5$, \texttt{start = 3}, and $x = 80$, your path may look something like this:
+\begin{itemize}
+    \item Scroll 1 holds the number 97 and is the last scroll.
+    \item Scroll 2 holds the number 58 and points to Scroll 5.
+    \item Scroll 3 holds the number 16 and points to Scroll 2.
+    \item Scroll 4 holds the number 81 and points to Scroll 1.
+    \item Scroll 5 holds the number 79 and points to Scroll 4.
+\end{itemize}
+
+A strategy would be to ask 5 queries to get the information for all scrolls, then you would report back to the king with the number 81 as it is the smallest number greater than or equal to 80.
+
+\section*{Hints: }
+\begin{itemize}
+\item Think about the \textit{nuts and bolts} problem discussed in class. Just as matching each nut to its corresponding bolt required clever strategies, this problem may benefit from a similar approach. Consider using randomization to explore the scrolls efficiently and find the correct number. The key lies in making wise choices about which scrolls to inspect.
+\end{itemize}

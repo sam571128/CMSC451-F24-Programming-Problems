@@ -1,0 +1,1 @@
+{"id":"9de3f50de3a84ceb3b8085711a806c5e","index":2,"scriptPattern":"gen -n\u003d100 -q\u003d100 [1..1000] -rndn\u003d1 -rndq\u003d1","inputFile":"stdin","outputFile":"stdout","memoryLimit":256,"timeLimit":1000,"totalTimeLimit":90000,"solutionNames":["Sam.cpp","no_assign_id.cpp"],"description":"","solutionNamesUid":"8aab55628ac1a7bd8d44eb390eaaa0fb","ignoreValidators":false}

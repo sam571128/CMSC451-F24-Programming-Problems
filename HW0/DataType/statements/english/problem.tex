@@ -1,0 +1,39 @@
+\begin{problem}{Data Types}{standard input}{standard output}{2 seconds}{256 megabytes}
+
+\textbf{This problem will not be graded for Homework 1} 
+
+When implementing algorithms in programming languages like C++ or Java, it's crucial to be aware of the data type ranges you're working with. For example:
+
+\begin{itemize}
+\item A 32-bit integer, represented as \textbf{int} in C++ and Java,  has a range from $-2^{31}$ to $2^{31} - 1$
+\item A 64-bit integer, represented as \textbf{long long} in C++ and \textbf{long} in Java, has a range from $-2^{63}$ to $2^{63}-1$
+\end{itemize}
+
+Understanding these ranges is essential for avoiding issues like integer overflow or underflow. These issues can lead to incorrect or unexpected output, potentially causing your algorithm to fail in real-world applications.
+
+In this exercise, you will be given an array of length $n$. Your task is to calculate and output the sum of all elements in the array. Be mindful of the data type you choose to ensure that your code does not suffer from overflow or underflow issues.
+
+Note that the default number types in some programming languages such as Python have no overflow issues. You are recommended to learn more about how your language of choice works with numbers.
+
+\InputFile
+The first line contains a positive integer $n$.
+
+The second line contains $n$ integers $a_1, a_2, \cdots, a_n$.
+
+\textbf{Constraints}
+\begin{itemize}
+    \item $1 \le n \le 10^6$
+    \item $-10^9 \le a_i \le 10^9$
+\end{itemize}
+
+\OutputFile
+Output the sum of the array.
+
+\Example
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\end{example}
+
+\end{problem}
+

@@ -1,0 +1,26 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>Building Improvements</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">Building Improvements</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>1 second</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>256 megabytes</DIV><DIV class="input-file input-standard"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file output-standard"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P>You have just been assigned to the CS Department's "Student Contentment Committee" and have been tasked with improving the comfort of Iribe (let us say nothing about CSIC).</P><P>The CS department is interested in adding more comfortable seating around Iribe to improve student happiness, but does not want to spend more money than necessary.</P><P>For this problem, let us model the building as a collection of areas (nodes) and one-way corridors between sitting areas (directed edges). Why one-way corridors? Well, just to make the problem more interesting...</P><P>Every area $$$a_i$$$ has some cost $$$c_i$$$ of building new seating in that area.</P><P>You learn from the building coordinator that if a student can get from an area $$$a_i$$$ to another area $$$a_j$$$, and also get from $$$a_j$$$ back to $$$a_i$$$, then there is no need to build seating at both $$$a_i$$$ and $$$a_j$$$&mdash;it is sufficient to build seating at only one of the areas&mdash;and of course the cheaper option is better!</P><P>Your task is to determine the minimum total cost to ensure that every area either (1) has new seating built at its location, or (2) can reach (and can be reached) by an area with seating.</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>The first line will contain an integer $$$1 \leq n \leq 10^{5}$$$ for the number of areas. </P><P>In the next line, $$$n$$$ space-separated integers representing the costs $$$c_i$$$ will be given where $$$\forall i, 0 \leq c_i \leq 10^{9}$$$.</P><P>The next line will contain an integer $$$0 \leq m \leq 10^{6}$$$ representing the number of one-way corridors. Each of the next $$$m$$$ lines will contain two integers $$$a_i$$$ and $$$a_j$$$ representing the areas that the next corridor connects.</P><P>Note that there will be no corridors connecting an area to itself.</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>Output the minimum possible cost required to ensure that each area (1) has new seating built at its location, or (2) can reach (and can be reached) by an area with seating.</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Example</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content" data-content="3
+100 20 999
+3
+0 1
+1 0
+1 2
+">
+<DIV class="test-example-line test-example-line-even test-example-line-0">3</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">100 20 999</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">3</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">0 1</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">1 0</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">1 2</DIV></PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+1019
+</PRE></DIV></DIV></DIV><P></P><P></P><DIV class="note"><DIV class="section-title">Note</DIV><P></P><P>In the example, the first two areas can both reach each other, so only one seating location needs to be built. The cheaper option is to build on area 2 at a cost of 20. The third area also needs to have a seating location built, at a cost of 999. The total cost will be 1019.</P></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>

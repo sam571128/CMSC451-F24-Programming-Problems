@@ -1,0 +1,22 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>Data Types</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">Data Types</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>2 seconds</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>256 megabytes</DIV><DIV class="input-file input-standard"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file output-standard"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P><SPAN class="tex-font-style-bf">This problem will not be graded for Homework 1</SPAN> </P><P>When implementing algorithms in programming languages like C++ or Java, it's crucial to be aware of the data type ranges you're working with. For example:</P><P></P><UL> <LI> A 32-bit integer, represented as <SPAN class="tex-font-style-bf">int</SPAN> in C++ and Java, has a range from $$$-2^{31}$$$ to $$$2^{31} - 1$$$ </LI><LI> A 64-bit integer, represented as <SPAN class="tex-font-style-bf">long long</SPAN> in C++ and <SPAN class="tex-font-style-bf">long</SPAN> in Java, has a range from $$$-2^{63}$$$ to $$$2^{63}-1$$$ </LI></UL><P></P><P>Understanding these ranges is essential for avoiding issues like integer overflow or underflow. These issues can lead to incorrect or unexpected output, potentially causing your algorithm to fail in real-world applications.</P><P>In this exercise, you will be given an array of length $$$n$$$. Your task is to calculate and output the sum of all elements in the array. Be mindful of the data type you choose to ensure that your code does not suffer from overflow or underflow issues.</P><P>Note that the default number types in some programming languages such as Python have no overflow issues. You are recommended to learn more about how your language of choice works with numbers.</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>The first line contains a positive integer $$$n$$$.</P><P>The second line contains $$$n$$$ integers $$$a_1, a_2, \cdots, a_n$$$.</P><P><SPAN class="tex-font-style-bf">Constraints</SPAN> </P><UL> <LI> $$$1 \le n \le 10^6$$$ </LI><LI> $$$-10^9 \le a_i \le 10^9$$$ </LI></UL></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>Output the sum of the array.</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Example</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content">
+5
+1000000000 1000000000 1000000000 1000000000 1000000000
+</PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+5000000000
+</PRE></DIV></DIV></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>

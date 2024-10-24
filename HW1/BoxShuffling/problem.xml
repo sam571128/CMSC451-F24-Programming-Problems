@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="3" short-name="rearrange-query" url="https://polygon.codeforces.com/p16AoaG/slee/rearrange-query">
+    <names>
+        <name language="english" value="The Great Box Shuffle"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>120</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test group="1" method="manual" points="0.0" sample="true"/>
+                <test cmd="gen -n=100 -q=100 1 -rndn -rndq" group="1" method="generated" points="40.0"/>
+                <test cmd="gen -n=100 -q=100 2 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 3 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 4 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 5 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 6 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 7 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 8 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 9 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 10 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 10" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 11" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 12" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 13" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 14" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 15" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 16" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 17" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 18" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 19" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -q=100 20" group="1" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=1000 -q=1000 20 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=1000 -q=1000 21 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=1000 -q=1000 22 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=1000 -q=1000 23 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=1000 -q=1000 24 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=1000 -q=1000 25 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=1000 -q=1000 26 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=1000 -q=1000 27 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=1000 -q=1000 28 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=1000 -q=1000 29 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=1000 -q=1000 30 -rndn -rndq" group="1" method="generated" points="0.0"/>
+                <test cmd="gen3 -n=1000 -q=1000 30 -rndn" group="1" method="generated" points="0.0"/>
+                <test cmd="gen3 -n=1000 -q=1000 31 -rndn" group="1" method="generated" points="0.0"/>
+                <test cmd="gen3 -n=1000 -q=1000 32 -rndn" group="1" method="generated" points="0.0"/>
+                <test cmd="gen3 -n=1000 -q=1000 33 -rndn" group="1" method="generated" points="0.0"/>
+                <test cmd="gen3 -n=1000 -q=1000 34 -rndn" group="1" method="generated" points="0.0"/>
+                <test cmd="gen3 -n=1000 -q=1000 35 -rndn" group="1" method="generated" points="0.0"/>
+                <test cmd="gen3 -n=1000 -q=1000 36 -rndn" group="1" method="generated" points="0.0"/>
+                <test cmd="gen3 -n=1000 -q=1000 37 -rndn" group="1" method="generated" points="0.0"/>
+                <test cmd="gen3 -n=1000 -q=1000 38 -rndn" group="1" method="generated" points="0.0"/>
+                <test cmd="gen3 -n=1000 -q=1000 39 -rndn" group="1" method="generated" points="0.0"/>
+                <test cmd="gen3 -n=1000 -q=1000 40 -rndn" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=1000 -q=1000 40" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=1000 -q=1000 41" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=1000 -q=1000 42" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=1000 -q=1000 43" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=1000 -q=1000 44" group="1" method="generated" points="0.0"/>
+                <test cmd="gen -n=1000 -q=1000 45" group="1" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=1000 -q=1000 45" group="1" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=1000 -q=1000 46" group="1" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=1000 -q=1000 47" group="1" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=1000 -q=1000 48" group="1" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=1000 -q=1000 49" group="1" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=1000 -q=1000 50" group="2" method="generated" points="60.0"/>
+                <test cmd="gen -n=10000 -q=10000 50 -rndn -rndq" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 51 -rndn -rndq" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 52 -rndn -rndq" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 53 -rndn -rndq" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 54 -rndn -rndq" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 55 -rndn -rndq" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 56 -rndn -rndq" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 57 -rndn -rndq" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 58 -rndn -rndq" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 59 -rndn -rndq" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 60 -rndn -rndq" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 60" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 61" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 62" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 63" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 64" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 65" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 66" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 67" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 68" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 69" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -q=10000 70" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 70" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 71" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 72" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 73" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 74" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 75" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 76" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 77" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 78" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 79" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 80" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 80 -rndn" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 81 -rndn" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 82 -rndn" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 83 -rndn" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 84 -rndn" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 85 -rndn" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 86 -rndn" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 87 -rndn" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 88 -rndn" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 89 -rndn" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=200000 -q=200000 90 -rndn" group="2" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=200000 -q=200000 90" group="2" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=200000 -q=200000 91" group="2" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=200000 -q=200000 92" group="2" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=200000 -q=200000 93" group="2" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=200000 -q=200000 94" group="2" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=200000 -q=200000 95" group="2" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=200000 -q=200000 96" group="2" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=200000 -q=200000 97" group="2" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=200000 -q=200000 98" group="2" method="generated" points="0.0"/>
+                <test cmd="gen2 -n=200000 -q=200000 99" group="2" method="generated" points="0.0"/>
+                <test description="Added from stress #d1f23dc7dca281f89485a3975c14b528. Had script line &quot;gen -n=100 -q=100 644 -rndn=1 -rndq=1 95448f37ca53c43e47a2c47e697b2b7b&quot;" group="1" method="manual" points="0.0"/>
+                <test description="Added from stress #df3a1a684edfc02f210e3345289bfdef. Had script line &quot;gen -n=10 -q=10 743 -rndq=1 39bae48fd540785489cf68b1866b28b3&quot;" group="1" method="manual" points="0.0"/>
+                <test description="Added from stress #fa44a73e977a5e9680e5c411321bfd65. Had script line &quot;gen -n=100 -q=100 454 -rndn=1 d8f22ffd2781d1c8d7e982c730f45d0e&quot;" group="1" method="manual" points="0.0"/>
+                <test description="Added from stress #df3a1a684edfc02f210e3345289bfdef. Had script line &quot;gen -n=10 -q=10 93 -rndq=1 6fb791ed30188ffddbec3efd572cb352&quot;" group="1" method="manual" points="0.0"/>
+                <test description="Added from stress #fa44a73e977a5e9680e5c411321bfd65. Had script line &quot;gen -n=100 -q=100 478 -rndn=1 13d5ec2c4531c544425feca737d2155a&quot;" group="1" method="manual" points="0.0"/>
+                <test cmd="gen2 -n=200000 -q=200000 100" group="2" method="generated" points="0.0"/>
+                <test description="Added from stress #0e5cee5c6998f63a84a3efe01c6ce662. Had script line &quot;gen2 -n=10 -q=10 905 -rndq=1 45fa69939c964eaa260e56287c8ec520&quot;" group="1" method="manual" points="0.0"/>
+                <test description="Added from stress #3f415d554b33a9f927efce6bf4944a05. Had script line &quot;gen2 -n=1000 -q=1000 130 -rndq=1 c9246874d569c1b7b9c00d467be20c3c&quot;" group="1" method="manual" points="0.0"/>
+                <test group="1" method="manual" points="0.0"/>
+                <test description="Added from stress #760c94ec7697c35b313280694ade047f. Had script line &quot;gen -n=10 -q=100 911 -rndn=1 1a5004c2efeec55270a9ca65f8731401&quot;" group="1" method="manual" points="0.0"/>
+            </tests>
+            <groups>
+                <group feedback-policy="points" name="1" points-policy="each-test"/>
+                <group feedback-policy="points" name="2" points-policy="each-test"/>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/gen.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+                <binary path="files/gen.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen2.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+                <binary path="files/gen2.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen3.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+                <binary path="files/gen3.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/valid.cpp" type="cpp.ms2017"/>
+                <binary path="files/valid.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::nyesno.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/valid.cpp" type="cpp.ms2017"/>
+                <binary path="files/valid.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/Sam.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+                <binary path="solutions/Sam.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/no_assign_id.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+                <binary path="solutions/no_assign_id.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/only_output_no.cpp" type="cpp.gcc13-64-winlibs-g++20"/>
+                <binary path="solutions/only_output_no.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>4</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list>
+            <stress index="4" path="stresses/004"/>
+            <stress index="3" path="stresses/003"/>
+            <stress index="2" path="stresses/002"/>
+            <stress index="1" path="stresses/001"/>
+        </list>
+    </stresses>
+</problem>

@@ -1,0 +1,11 @@
+You have just been assigned to the CS Department's "Student Contentment Committee" and have been tasked with improving the comfort of Iribe (let us say nothing about CSIC).
+
+The CS department is interested in adding more comfortable seating around Iribe to improve student happiness, but does not want to spend more money than necessary.
+
+For this problem, let us model the building as a collection of areas (nodes) and one-way corridors between sitting areas (directed edges). Why one-way corridors? Well, just to make the problem more interesting...
+
+Every area $a_i$ has some cost $c_i$ of building new seating in that area.
+
+You learn from the building coordinator that if a student can get from an area $a_i$ to another area $a_j$, and also get from $a_j$ back to $a_i$, then there is no need to build seating at both $a_i$ and $a_j$---it is sufficient to build seating at only one of the areas---and of course the cheaper option is better!
+
+Your task is to determine the minimum total cost to ensure that every area either (1) has new seating built at its location, or (2) can reach (and can be reached) by an area with seating.
