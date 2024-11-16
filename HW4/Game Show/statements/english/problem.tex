@@ -1,0 +1,66 @@
+\begin{problem}{Game Show}{standard input}{standard output}{3 seconds}{256 megabytes}
+
+You receive an invitation to participate in a game show, where you encounter a playing field scattered with $n$ balls. Each ball is labeled with a unique identifier $i$ and has an associated value $v_i$ (note that $v_i$ can be negative). Your objective is to collect a subset of these balls, place them in your bag, and maximize your earnings by the end of the game. The earnings are calculated as $\max(0, \sum_{i \in S} v_i)$ dollars, where $S$ is the set of balls you've chosen. To add a twist to the game, there are $m$ additional rules, each falling into one of the following categories:
+\begin{itemize}
+    \item If you pick up ball $i$ but not ball $j$, you will incur a penalty of $x$ dollars.
+    \item If you pick up ball $i$, you are required to also pick up ball $j$.
+\end{itemize}
+Your task write a program that determines the optimal set of balls to collect in order to maximize your prize money.
+
+
+\InputFile
+The first line contains two integers $n, m$
+
+The next line contains $n$ integers $v_1, \cdots, v_n$
+
+The following $m$ lines contains two possibilities
+\begin{enumerate}
+    \item \texttt{1 i j x}
+    \item \texttt{2 i j}
+\end{enumerate}
+
+\textbf{Constraints}
+\begin{itemize}
+\item $2 \le n \le 10^5$
+\item $1 \le m \le 10^5$
+\item $|v_i| \le 10^9$
+\item $1 \le x_i \le 10^9$
+\item $i \ne j$ for all rules, but it is possible to have same $(i,j)$ for different rules
+\end{itemize}
+
+\OutputFile
+In the first line, output the maximum prize you can get.
+
+In the second line, output a single integer, representing the number of balls you picked up.
+
+In the third line, output the indices of the balls that you picked up (any order is fine).
+
+There might be multiple correct answer, you will get the points if you output any of them.
+
+\Scoring
+The following are the scoring criteria for this problem. The maximum score is $100$, and you will receive the score for each subtask if your program passes that subtask.
+
+\begin{center}
+  \begin{tabular}{ | c | c | c | c | } \hline
+    \bf{Subtask} &
+    \bf{Constraints} &
+    \bf{Score} &
+    \bf{Additional Constraints} \\ \hline
+    $1$ & Example test case & $0$ & None \\ \hline
+    $2$ & $n \le 10$ & $20$ & None \\ \hline
+    $3$ & $n, m \le 100$ & $20$ & None \\ \hline
+    $4$ & $n, m \le 10^4$ & $30$ & Must pass subtasks 2, and 3 \\ \hline
+    $5$ & No additional Constraints & $30$ & Must pass subtasks 1, 2, 3, and 4 \\ \hline
+    \end{tabular}
+\end{center}
+
+\Examples
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\exmpfile{example.02}{example.02.a}%
+\exmpfile{example.03}{example.03.a}%
+\end{example}
+
+\end{problem}
+

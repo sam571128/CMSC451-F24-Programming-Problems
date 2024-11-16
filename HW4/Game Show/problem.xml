@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="7" short-name="game-show" url="https://polygon.codeforces.com/p2Bo0sw/slee/game-show">
+    <names>
+        <name language="english" value="Game Show"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>3000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>83</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test group="1" method="manual" points="0.0" sample="true"/>
+                <test group="1" method="manual" points="0.0" sample="true"/>
+                <test group="1" method="manual" points="0.0" sample="true"/>
+                <test cmd="gen -n=10 -m=10 1 2 -debug -rndn -rndm" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=10 2 2 -debug -rndn -rndm" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=10 3 2 -debug -rndn -rndm" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=10 4 2 -debug -rndn -rndm" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=10 5 2 -debug -rndn -rndm" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=10 6 2 -debug" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=10 7 2 -debug" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=10 8 2 -debug" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=10 9 2 -debug" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=10 10 2 -debug" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=100000 11 2 -rndn -rndm" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=100000 12 2 -rndn -rndm" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=100000 13 2 -rndn -rndm" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=100000 14 2 -rndn -rndm" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=100000 15 2 -rndn -rndm" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=100000 16 2 -rndn -rndm" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=100000 17 2 -rndn -rndm" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=100000 18 2 -rndn -rndm" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=100000 19 2 -rndn -rndm" group="2" method="generated" points="0.0"/>
+                <test cmd="gen -n=10 -m=100000 20 2 -rndn -rndm" group="2" method="generated" points="20.0"/>
+                <test cmd="gen -n=100 -m=100 1 3 -debug -rndn -rndm" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 2 3 -debug -rndn -rndm" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 3 3 -debug -rndn -rndm" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 4 3 -debug -rndn -rndm" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 5 3 -debug -rndn -rndm" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 6 3 -debug" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 7 3 -debug" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 8 3 -debug" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 9 3 -debug" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 10 3 -debug" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 11 3" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 12 3" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 13 3" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 14 3" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 15 3" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 16 3" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 17 3" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 18 3" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 19 3" group="3" method="generated" points="0.0"/>
+                <test cmd="gen -n=100 -m=100 20 3" group="3" method="generated" points="20.0"/>
+                <test cmd="gen -n=10000 -m=10000 1 4 -debug -rndn -rndm" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 2 4 -debug -rndn -rndm" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 3 4 -debug -rndn -rndm" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 4 4 -debug -rndn -rndm" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 5 4 -debug -rndn -rndm" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 6 4 -debug" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 7 4 -debug" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 8 4 -debug" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 9 4 -debug" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 10 4 -debug" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 11 4" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 12 4" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 13 4" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 14 4" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 15 4" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 16 4" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 17 4" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 18 4" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 19 4" group="4" method="generated" points="0.0"/>
+                <test cmd="gen -n=10000 -m=10000 20 4" group="4" method="generated" points="30.0"/>
+                <test cmd="gen -n=100000 -m=100000 1 5 -debug -rndn -rndm" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 2 5 -debug -rndn -rndm" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 3 5 -debug -rndn -rndm" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 4 5 -debug -rndn -rndm" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 5 5 -debug -rndn -rndm" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 6 5 -debug" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 7 5 -debug" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 8 5 -debug" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 9 5 -debug" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 10 5 -debug" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 11 5" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 12 5" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 13 5" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 14 5" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 15 5" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 16 5" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 17 5" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 18 5" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 19 5" group="5" method="generated" points="0.0"/>
+                <test cmd="gen -n=100000 -m=100000 20 5" group="5" method="generated" points="30.0"/>
+            </tests>
+            <groups>
+                <group feedback-policy="complete" name="1" points="0.0" points-policy="complete-group"/>
+                <group feedback-policy="complete" name="2" points="20.0" points-policy="complete-group"/>
+                <group feedback-policy="complete" name="3" points="20.0" points-policy="complete-group"/>
+                <group feedback-policy="complete" name="4" points="30.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="3"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="complete" name="5" points="30.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="1"/>
+                        <dependency group="2"/>
+                        <dependency group="3"/>
+                        <dependency group="4"/>
+                    </dependencies>
+                </group>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/checker.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/gen.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/valid.cpp" type="cpp.g++17"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/checker.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp" type="cpp.g++17"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/valid.cpp" type="cpp.g++17"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/Sam_AC.cpp" type="cpp.g++17"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

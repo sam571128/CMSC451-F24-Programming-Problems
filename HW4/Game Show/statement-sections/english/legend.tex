@@ -1,0 +1,6 @@
+You receive an invitation to participate in a game show, where you encounter a playing field scattered with $n$ balls. Each ball is labeled with a unique identifier $i$ and has an associated value $v_i$ (note that $v_i$ can be negative). Your objective is to collect a subset of these balls, place them in your bag, and maximize your earnings by the end of the game. The earnings are calculated as $\max(0, \sum_{i \in S} v_i)$ dollars, where $S$ is the set of balls you've chosen. To add a twist to the game, there are $m$ additional rules, each falling into one of the following categories:
+\begin{itemize}
+    \item If you pick up ball $i$ but not ball $j$, you will incur a penalty of $x$ dollars.
+    \item If you pick up ball $i$, you are required to also pick up ball $j$.
+\end{itemize}
+Your task write a program that determines the optimal set of balls to collect in order to maximize your prize money.
